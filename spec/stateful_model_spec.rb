@@ -20,6 +20,13 @@ describe Ohm::StatefulModel do
     end.should raise_error("FakeStateMachine must inherit from Ohm::State")
   end
 
+  it "should allow assigning state on create" do
+    vehicle = Vehicle.create(:state => "idling")
+    vehicle.state.should == "idling"
+    vehicle.state_machine.state.should == "idling"
+    vehicle.can_park?.should be_true
+  end
+
   context "with a model" do
     before(:each) do
       @vehicle = Vehicle.new

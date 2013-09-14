@@ -28,8 +28,6 @@ module Ohm
     attr_reader :state_machine
 
     def initialize(*args)
-      super
-
       if self.class.state_machine_class
         @state_machine = self.class.state_machine_class.new
 
@@ -48,7 +46,10 @@ module Ohm
           update_attributes(state_machine_name => obj.state)
         end
 
+        super
         initialize_value
+      else
+        super
       end
     end
 
