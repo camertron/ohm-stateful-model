@@ -7,7 +7,7 @@ group :development do
 end
 
 group :test do
-  gem "mock_redis"
-  gem "rspec"
-  gem "rr"
+  gem "mock_redis", "~> 0.8.1"
+  gem "rspec", "2.14.1"
+  gem "rr", "~> 1.1.2"
 end

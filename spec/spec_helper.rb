@@ -4,10 +4,6 @@ require 'rspec'
 require 'ohm/stateful_model'
 require 'mock_redis'
 
-RSpec.configure do |config|
-  config.mock_with :rr
-end
-
 module Ohm
   class Connection
 
