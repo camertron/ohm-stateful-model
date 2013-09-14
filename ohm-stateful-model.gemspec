@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
 
   s.require_path = 'lib'
-  s.files = Dir["{lib,spec}/**/**", "Gemfile", "History.txt", "Rakefile", "ohm-stateful-model.gemspec"]
+  s.files = Dir["{lib,spec}/**/**", "Gemfile", "History.txt", "Rakefile", "LICENSE", "ohm-stateful-model.gemspec"]
 end
