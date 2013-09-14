@@ -1,6 +1,3 @@
-gem 'ohm'
-gem 'state_machine'
-
 # encoding: UTF-8
 
 $:.unshift File.join(File.dirname(__FILE__), 'lib')
