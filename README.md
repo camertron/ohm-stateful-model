@@ -64,11 +64,11 @@ v.new?              # => false
 # fetch persisted data
 v2 = Vehicle[v.id]
 v2.state            # => "idling"
-v2.idling?          # true
+v2.idling?          # => true
 
-v2.can_park?         # => true
+v2.can_park?        # => true
 v2.park
-v2.parked?           # => true
+v2.parked?          # => true
 v2.save
 ```
 
