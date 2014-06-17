@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
 
-  s.add_dependency "ohm", "~> 1.3.2"
+  s.add_dependency "ohm", "~> 2.0.0"
   s.add_dependency "state_machine", "~> 1.2.0"
 
   s.add_development_dependency 'rake'
